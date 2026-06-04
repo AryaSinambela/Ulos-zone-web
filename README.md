@@ -1,4 +1,4 @@
-# Ulos-zone-web# Ulos Zone - E-Commerce Tradisional & Pelestarian Budaya
+# Ulos Zone - E-Commerce Tradisional & Pelestarian Budaya
 
 Ulos Zone adalah platform aplikasi web e-commerce *Full-Stack* yang didedikasikan untuk melestarikan dan mendistribusikan kain tenun Ulos tradisional. Proyek ini dibangun menggunakan arsitektur MVC (Model-View-Controller) murni untuk memisahkan logika bisnis, antarmuka pengguna, dan manajemen basis data.
 
