@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ulos Zone - Premium Traditional Weaving</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Ulos<span>Zone</span></div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#catalog">Koleksi</a></li>
+            <li><a href="#about">Filosofi</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1>Kemewahan Kain Tenun Ulos Asli</h1>
+            <p>Menghadirkan mahakarya budaya luhur dengan kualitas benang premium langsung dari pengrajin tradisional.</p>
+            <a href="#catalog" class="cta-btn">Jelajahi Koleksi</a>
+        </div>
+        <div class="ocean-container">
+            <svg class="boat" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <path d="M15 60 L85 60 L75 80 L25 80 Z" fill="#5B0E1B" stroke="#D4AF37" stroke-width="2"/>
+                <line x1="50" y1="20" x2="50" y2="60" stroke="#FFFFFF" stroke-width="3"/>
+                <path d="M50 22 L25 55 L48 55 Z" fill="#FDFBF9" opacity="0.95"/>
+                <path d="M52 25 L73 55 L52 55 Z" fill="#D4AF37" opacity="0.9"/>
+                <polygon points="50,15 60,20 50,25" fill="#5B0E1B" />
+            </svg>
+            <div class="wave wave1"></div>
+            <div class="wave wave2"></div>
+            <div class="wave wave3"></div>
+        </div>
+    </header>
+
+    <section class="catalog" id="catalog">
+        <div class="section-title">
+            <h2>Kain Ulos Pilihan</h2>
+        </div>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-placeholder">RAGIDUP</div>
+                <div class="product-info">
+                    <h3>Ulos Ragidup</h3>
+                    <p>Ulos dengan nilai sakral tinggi, melambangkan kehidupan, doa restu, dan kebahagiaan yang berkesinambungan.</p>
+                    <div class="product-meta">
+                        <span class="price">Rp 1.250.000</span>
+                        <button class="buy-btn">Beli</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-placeholder">RAGI HOTANG</div>
+                <div class="product-info">
+                    <h3>Ulos Ragi Hotang</h3>
+                    <p>Sering digunakan dalam upacara adat pernikahan, melambangkan ikatan kasih yang kuat dan kokoh layaknya rotan.</p>
+                    <div class="product-meta">
+                        <span class="price">Rp 850.000</span>
+                        <button class="buy-btn">Beli</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-image-placeholder">SADUM</div>
+                <div class="product-info">
+                    <h3>Ulos Sadum</h3>
+                    <p>Memiliki karakteristik warna cerah dan motif penuh keceriaan, melambangkan sukacita, kesuksesan, dan rasa syukur.</p>
+                    <div class="product-meta">
+                        <span class="price">Rp 650.000</span>
+                        <button class="buy-btn">Beli</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<div id="cartModal" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-btn" id="closeCart">&times;</span>
+            <h2>Keranjang Belanja</h2>
+            
+            <div id="cartItemsList" class="cart-items">
+                </div>
+            
+            <div class="cart-summary">
+                <h3>Total: <span id="cartTotal">Rp 0</span></h3>
+                
+                <label for="paymentMethod">Metode Pembayaran:</label>
+                <select id="paymentMethod" class="payment-select">
+                    <option value="qris">QRIS (Langsung Proses)</option>
+                    <option value="dana">DANA</option>
+                    <option value="shopeepay">ShopeePay</option>
+                    <option value="gopay">GoPay</option>
+                </select>
+                
+                <button class="checkout-btn-final" id="btnProsesCheckout">Bayar Sekarang</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-about" id="about">
+                <h4>Tentang Platform</h4>
+                <p>Platform modern yang didedikasikan untuk pelestarian digital dan distribusi komersial kain Ulos tradisional.</p>
+            </div>
+            <div class="footer-dev">
+                <h4>Informasi Pengembang</h4>
+                <ul class="info-list">
+                    <li><strong>Nama:</strong> Arya Pratama Sinambela</li>
+                    <li><strong>Kampus:</strong> Institut Teknologi Del</li>
+                </ul>
+                <div class="tag-container">
+                    <span class="tech-tag">VS Code</span>
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

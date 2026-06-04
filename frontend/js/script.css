@@ -1,0 +1,30 @@
+// Menunggu sampai seluruh DOM (HTML) selesai dimuat
+document.addEventListener('DOMContentLoaded', () => {
+    
+    const buyButtons = document.querySelectorAll('.buy-btn');
+    let cartCount = 0;
+
+    buyButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            // Mengambil nama Ulos dari elemen HTML terkait
+            const productCard = e.target.closest('.product-card');
+            const productName = productCard.querySelector('h3').innerText;
+            
+            cartCount++;
+            alert(`Sukses! ${productName} berhasil dimasukkan ke keranjang. (Total: ${cartCount} item)`);
+            
+            // Efek visual klik tombol
+            const originalText = e.target.innerText;
+            e.target.innerText = "Ditambahkan ✓";
+            e.target.style.backgroundColor = "var(--primary-maroon)";
+            e.target.style.color = "#FFFFFF";
+            
+            // Kembalikan ke tampilan semula setelah 2 detik
+            setTimeout(() => {
+                e.target.innerText = originalText;
+                e.target.style.backgroundColor = "transparent";
+                e.target.style.color = "var(--primary-maroon)";
+            }, 2000);
+        });
+    });
+});
